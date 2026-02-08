@@ -153,4 +153,6 @@ with tab_presu:
             st.rerun()
 
         total_presupuesto = sum(item['total'] for item in st.session_state.carrito)
+
         st.markdown(f'<div class="total-box">TOTAL: $ {total_presupuesto:,.0f}</div>', unsafe_allow_html=True
+                   )
